@@ -96,6 +96,18 @@ Dataset terdiri dari:
 - NumPy
 - PIL (Python Imaging Library)
 
+## 📚 Referensi
+
+### Dokumentasi Utama
+- **PaddleOCR Text Recognition Module**: [https://www.paddleocr.ai/main/en/version3.x/module_usage/text_recognition.html](https://www.paddleocr.ai/main/en/version3.x/module_usage/text_recognition.html)
+
+Dokumentasi ini menyediakan panduan lengkap tentang modul text recognition PaddleOCR, termasuk daftar model yang didukung, performa, dan cara penggunaan. Referensi ini sangat penting untuk memahami berbagai model OCR yang tersedia dan memilih model yang tepat untuk kebutuhan pengenalan plat nomor kendaraan.
+
+### Model yang Direkomendasikan
+Berdasarkan dokumentasi PaddleOCR, untuk aplikasi pengenalan plat nomor kendaraan Indonesia, disarankan menggunakan:
+- **PP-OCRv5_server_rec**: Model generasi terbaru dengan akurasi tinggi (86.38%) yang mendukung berbagai bahasa termasuk karakter kompleks
+- **PP-OCRv4_mobile_rec**: Model ringan untuk deployment di edge devices dengan efisiensi tinggi
+
 ---
 
 **Developed for License Plate Detection System v2**
