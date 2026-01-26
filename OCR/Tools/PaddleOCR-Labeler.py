@@ -3,8 +3,14 @@ import streamlit as st
 from PIL import Image
 
 # --- Configuration ---
-IMAGE_FOLDER = '/Users/user/Documents/Christopher/Project/AI/licence-detection-v2/vehicle-detection/OCR/training-model-OCR/dataset/'
-LABEL_FILE = '/Users/user/Documents/Christopher/Project/AI/licence-detection-v2/vehicle-detection/OCR/training-model-OCR/labels.txt'
+# Use relative paths or correct absolute paths matching the file system
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../../'))
+OCR_ROOT = os.path.join(PROJECT_ROOT, 'OCR')
+TRAINING_DIR = os.path.join(OCR_ROOT, 'training_model_OCR')
+
+IMAGE_FOLDER = os.path.join(TRAINING_DIR, 'dataset')
+LABEL_FILE = os.path.join(TRAINING_DIR, 'labels.txt')
 
 # --- Helper Functions ---
 def get_image_list(folder):
